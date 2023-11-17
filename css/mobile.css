@@ -1,0 +1,549 @@
+/* 
+KATTA EKRANLAR UCHUN
+kontent > 1000px
+DESKTOP
+kontent 1000px > 992px 
+PLANSHET
+kontent 992px > 768px 
+PHONE
+kontent 768px > 540px
+kontent 540px > 320px
+ */
+
+@media screen and (min-width: 1000px) {}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    background: green;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  nav {
+    background: red;
+  }
+
+  .left-menu {
+    transform: translateX(-100%);
+    transition: all .5s ease;
+  }
+
+  .fa-bars {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .4s ease;
+  }
+
+  .fa-bars:hover {
+    color: orange;
+  }
+
+  .fa-xmark {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .4s ease;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 200;
+    color: orange;
+  }
+
+  .fa-xmark:hover {
+    color: white;
+  }
+
+  .nav-menu ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    background-color: #050827;
+    text-align: center;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-menu ul li {
+    margin-bottom: 25px;
+    margin-left: 0;
+  }
+
+  .nav-menu ul li a {
+    font-size: 24px;
+  }
+
+  .nav-menu ul li .nav-link {
+    color: white;
+    font-size: 24px;
+    letter-spacing: 0;
+  }
+
+  .nav-menu ul li:last-child {
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-menu ul li:last-child a {
+    color: white;
+  }
+
+  .coffee-response {
+    padding-top: 150px;
+  }
+
+  .featured {
+    padding-top: 120px;
+  }
+
+  .story {
+    padding-top: 120px;
+  }
+
+  .products {
+    padding-top: 120px;
+  }
+
+  .products-blocks {
+    justify-content: space-evenly;
+  }
+
+  .products-block {
+    margin-bottom: 20px;
+  }
+
+  .magazine-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .magazine-images,
+  .magazine-text {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .magazine-text {
+    margin-top: 20px;
+  }
+
+  .magazine-text h2,
+  .magazine-text p {
+    max-width: 100%;
+  }
+
+  .stories-blocks {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .stories-block {
+    margin-top: 20px;
+  }
+
+  .stories-block:last-child {
+    width: -75%;
+    text-align: center;
+  }
+
+  .stories-block:last-child img {
+    text-align: center;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+  }
+
+  .footer-block {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    background: rgb(255, 239, 17);
+  }
+
+  .left-menu {
+    transform: translateX(-100%);
+    transition: all .5s ease;
+  }
+
+
+  .fa-bars {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .4s ease;
+  }
+
+  .fa-bars:hover {
+    color: white;
+  }
+
+  .fa-xmark {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .4s ease;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 200;
+  }
+
+  .fa-xmark:hover {
+    color: white;
+  }
+
+  .nav-menu ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    background-color: purple;
+    text-align: center;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-menu ul li {
+    margin-bottom: 25px;
+    margin-left: 0;
+  }
+
+  .nav-menu ul li a {
+    font-size: 24px;
+  }
+
+  .nav-menu ul li .nav-link {
+    color: white;
+    font-size: 24px;
+    letter-spacing: 0;
+  }
+
+  .nav-menu ul li:last-child {
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-menu ul li:last-child a {
+    color: white;
+  }
+
+  .story p {
+    padding: 0 20px;
+  }
+
+  .products-blocks {
+    justify-content: space-evenly;
+  }
+
+  .products-block {
+    margin-bottom: 20px;
+  }
+
+  .magazine-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .magazine-images,
+  .magazine-text {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .magazine-text {
+    margin-top: 20px;
+  }
+
+  .magazine-text h2,
+  .magazine-text p {
+    max-width: 100%;
+  }
+
+  .stories-blocks {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .stories-block {
+    margin-top: 20px;
+  }
+
+  .stories-block:last-child {
+    width: -75%;
+    text-align: center;
+  }
+
+  .stories-block:last-child img {
+    text-align: center;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+  }
+
+  .footer-block {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  nav {
+    background: rgb(17, 255, 69);
+  }
+
+  .left-menu {
+    transform: translateX(-100%);
+    transition: all .5s ease;
+  }
+
+  .nav-menu {
+    padding: 20px 0;
+  }
+
+  .fa-bars {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .4s ease;
+  }
+
+  .fa-bars:hover {
+    color: white;
+  }
+
+  .fa-xmark {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .4s ease;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 200;
+  }
+
+  .fa-xmark:hover {
+    color: white;
+  }
+
+  .nav-menu ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    background-color: purple;
+    text-align: center;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-menu ul li {
+    margin-bottom: 25px;
+    margin-left: 0;
+  }
+
+  .nav-menu ul li a {
+    font-size: 24px;
+  }
+
+  .nav-menu ul li .nav-link {
+    color: white;
+    font-size: 24px;
+    letter-spacing: 0;
+  }
+
+  .nav-menu ul li:last-child {
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-menu ul li:last-child a {
+    color: white;
+  }
+
+  .slider-block {
+    padding: 75px 20px;
+  }
+
+  .slider-block h4 {
+    font-size: 18px;
+  }
+
+  .slider-block p {
+    line-height: 24px;
+  }
+
+  .story {
+    padding: 75px 20px;
+  }
+
+  .story h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .story p {
+    padding: 0 20px;
+  }
+
+  .featured {
+    margin-bottom: 50px;
+  }
+
+  .featured-title {
+    margin-bottom: 50px;
+  }
+
+  .featured-blocks {
+    flex-direction: column;
+  }
+
+  .featured-block {
+    margin-bottom: 50px;
+  }
+
+  .products-blocks {
+    justify-content: space-evenly;
+  }
+
+  .products-block {
+    margin-bottom: 20px;
+  }
+
+  .products-block h4 {
+    margin: 10px 0;
+  }
+
+  .magazine {
+    padding-bottom: 50px;
+  }
+
+  .magazine-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .magazine-images {
+    flex-direction: column;
+  }
+
+  .img-two {
+    flex-direction: row;
+    margin-top: 20px;
+  }
+
+  .magazine-images img:first-child {
+    margin-right: 0;
+  }
+
+  .magazine-images,
+  .magazine-text {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .magazine-text {
+    margin-top: 20px;
+  }
+
+  .magazine-text h2,
+  .magazine-text p {
+    max-width: 100%;
+  }
+
+  .foto {
+    height: auto;
+  }
+
+  .stories {
+    padding: 50px 0;
+  }
+
+  .stories-blocks {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .stories-block {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .stories-block:last-child {
+    width: -75%;
+    text-align: center;
+  }
+
+  .stories-block:last-child img {
+    text-align: center;
+  }
+
+  .coffee form {
+    flex-direction: column;
+  }
+
+  .coffee form input[type=submit] {
+    margin-top: 20px;
+    max-width: 350px;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    padding: 75px 0;
+  }
+
+  .footer-block {
+    margin-bottom: 20px;
+  }
+
+  .footer-block:nth-child(1) p {
+    margin-bottom: 22px;
+  }
+
+  .footer-block:nth-child(4) span {
+    margin-top: 15px;
+  }
+
+  .footer-block:nth-child(1),
+  .footer-block:nth-child(2),
+  .footer-block:nth-child(3),
+  .footer-block:nth-child(4) {
+    display: block;
+    width: 100%;
+  }
+
+  .footer-block:nth-child(2) h4,
+  .footer-block:nth-child(3) h4,
+  .footer-block:nth-child(4) h4 {
+    margin-top: 30px;
+  }
+}
